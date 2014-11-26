@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="scripts/contollers/main.js"></script>
+    <title>Todo App</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1>Todo App:</h1>
+      <!--Start Angular App-->
+      <div ng-app="mytodoApp" ng-controller="TodoCtrl">
+        <ul class="todo-list">
+          <li class="todo-item" ng-repeat="todo in todos">
+            <input type="text" ng-model="todo" class="form-control">
+          </li>
+        </ul>
+      </div>
+      <!--End Angular App-->
+    </div>
+  </body>
+</html>
